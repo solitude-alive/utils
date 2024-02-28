@@ -444,7 +444,7 @@ def configure(dir_log=None, format_strs=None, comm=None, log_suffix=""):
     If comm is provided, average all numerical stats across that comm
     """
     if dir_log is None:
-        dir_log = os.getenv("Gemma_LOGDIR")
+        dir_log = os.getenv("LOGDIR")
     if dir_log is None:
         dir_log = osp.join(
             os.path.dirname(os.getcwd()),       # get parent directory
